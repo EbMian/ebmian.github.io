@@ -1,0 +1,592 @@
+body, html {
+  font-family : yugee-technosans,Arial;
+  background-color : #B2D2A4;
+  margin : 0;
+  height : 100%;
+  width: 100%;
+}
+
+/*css pour le menu latéral*/
+.menu_lateral{
+	background-color : #1A4314;	
+	height : 100%;
+	width : 10%;
+}
+.menu{
+	width : 50%;
+	padding : 25%;
+	text-align : center;
+	top : 25%;
+	line-height : 400%;
+	position : relative;
+}
+.logo{
+	position: absolute;
+    width: 10%;
+}
+.reseau{
+	bottom: 0%;
+    position: absolute;
+    height: 7%;
+	width : 10%;
+}
+.logo_reseau{
+	position : absolute;
+	width : 20%;
+	height : 40%;
+	top : 25%;
+}
+#facebook{
+	right : 10%;
+}
+#twitter{
+	left : 40%;
+}
+#instagram{
+	left : 10%;
+}
+.sous-menu{
+	display : none;
+	line-height : 150%;
+	background-color: rgba(67, 150, 12, 0.315);
+	font-size : small;
+}
+.oiseau:hover .sous-menu {
+	display:block;
+}
+.poisson:hover .sous-menu {
+	display:block;
+}
+.vegetaux:hover .sous-menu {
+	display:block;
+}
+.menu > div{
+	width : 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*css du corps du menu*/
+.foret{
+	width : 90%;
+	position: absolute;
+    margin-left: 10%;
+	height : 20%;
+}
+
+.corner_haut_gauche{
+	position : absolute;
+	left : 10%;
+	top : 20%;
+	z-index : 0;
+}
+.corner_haut_droite{
+	position : absolute;
+	right : 0%;
+	top : 20%;
+	z-index : 0;
+}
+.corner_bas_gauche{
+	position : absolute;
+	left : 10%;
+	bottom : 7%;
+	z-index : 0;
+}
+.corner_bas_droite{
+	position : absolute;
+	right : 0%;
+	bottom : 7%;
+	z-index : 0;
+}
+.titre{
+	position: absolute;
+    top: 21%;
+    left: 25%;
+	width: 60%;
+	letter-spacing : 3px;
+	text-align : center;
+	z-index : 10;
+}
+.bird{
+	position: absolute;
+    width: 10%;
+    left: 0;
+    top: 0;
+	z-index : 1;
+}
+.bird2{
+	position: absolute;
+    width: 10%;
+    right: 0;
+    top: 0;
+	z-index : 1;
+}
+
+
+
+
+
+
+
+
+
+
+a{
+	text-decoration: none;
+	color :#CEF3CE;
+}
+
+@font-face {
+    font-family: yugee-technosans;
+    src : url(../fonts/yugee-technosans/YugeeTechnoSans.otf);
+}
+
+
+
+/*css pour le pied de la page*/
+.footer{
+    height: 7%;
+    width: 90%;
+    position: absolute;
+    margin-left: 10%;
+	bottom : 0%;
+}
+footer>div{
+    text-align: center;
+    line-height: 400%;
+	
+ }
+footer{
+    background-color: rgba(67, 150, 12, 0.315);
+    border: 1px #1A4314;
+    color: #c7f7dc;
+    text-align: center;
+  
+}
+footer>div>div{
+	display : inline-block;
+	padding-left : 5%;
+	padding-right : 3%;
+}
+
+
+
+/*CSS pour le slider du menu*/
+/*
+.diapo > img {
+max-width: 100%;
+}
+*/
+.slider-container {
+    height: 50%;
+    width: 60%;
+    left: 25%;
+    top: 35%;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15%;
+    /*border: 3px solid black;*/
+}
+.diapo {
+position: absolute;
+left: 0;
+z-index: 900;
+width: 100%;
+bottom: 0;
+}
+.diapo label {
+cursor: pointer;
+display: inline-block;
+width: 16px;
+height: 16px;
+background: #fff;
+border-radius: 50px;
+margin: 0 0.2em 1em;
+}
+.diapo label:hover,
+.diapo label:focus {
+background: #1c87c9;
+}
+.slide {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 100%;
+z-index: 10;
+padding: 8em 1em 0;
+background-size: cover;
+background-position: 50% 50%;
+transition: left 0s 0.75s;
+
+}
+[id^="slide"]:checked + .slide {
+left: 0;
+z-index: 100;
+transition: left 0.65s ease-out;
+}
+.slide-1 {
+background-image: url(mesange.png);
+
+}
+.slide-2 {
+background-image: url(ecureuil.png);
+
+}
+.slide-3 {
+background-image: url(oiseau1.png);
+
+}
+.slide-4 {
+background-image: url(oiseau2.png);
+
+}
+.slide-5 {
+background-image: url(blaireau.png);
+
+}
+.slide-6 {
+background-image: url(pit_vert.png);
+
+}
+.slide-7 {
+background-image: url(papillon.png);
+
+}
+.slide-8 {
+background-image: url(libellule.jpg);
+
+}
+
+
+/*Style pour le boutton d'affichage du menu*/
+button {
+	position: absolute;
+    text-align : center;
+    z-index: 1;
+	color: #c7f7dc;
+	background-color: #1A4314;
+	font-weight: bold;
+	font-size: large;
+	/*Personnaliser les bordures du bouton*/
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	border: 2px solid #46a28d;
+	/*Effet de transition pourle changement de couleur du boutton*/
+	-webkit-transition: all 1.8s ease-out 0s;
+	-moz-transition: all 1.8s ease-out 0s;
+	transition: all 1.8s ease-out 0s;
+	top : 15%;
+	left : 40%;
+}
+button:hover{
+	background-color: black;
+}
+
+
+
+
+
+@media (max-height: 900px) {
+	footer>div{
+		line-height: 100%;
+	}
+}
+
+
+@media (max-height: 800px) {
+	.slider-container {
+		height: 50%;
+		width: 50%;
+		left: 30%;
+	}
+}
+
+@media (max-height: 650px) {
+	.slider-container {
+		height: 50%;
+		width: 40%;
+		left: 35%;
+	}
+	.corner_haut_gauche{
+		height: 20%;		
+	}
+	.corner_haut_droite{
+		height: 20%;
+	}
+	.corner_bas_gauche{
+		height: 20%;
+	}
+	.corner_bas_droite{
+		height: 20%;
+	}
+}
+
+@media (max-height: 500px) {
+	.titre{
+		top: 20%;
+	}
+	.menu{
+		line-height: 300%;
+	}
+}
+
+@media (min-width: 1650px) { 
+    .slider-container {
+		height: 60%;
+		width: 60%;
+		left: 25%;
+		top: 30%;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.menu{
+		font-size : small;
+		line-height : 600%;
+	}
+	.logo_reseau{
+		position : absolute;
+		width : 20%;
+		height : 30%;
+		top : 25%;
+	}
+	.sous-menu{
+		display : none;
+		line-height : 150%;
+		background-color: rgba(67, 150, 12, 0.315);
+		font-size : x-small;
+	}
+	.slider-container {
+		width : 65%;
+		left : 23%;
+	}
+}
+
+@media (max-width: 1110px) { 
+	footer>div>div{
+		display : inline-block;
+		padding-left : 2%;
+		padding-right : 3%;
+	}
+}
+
+@media (max-width: 900px) { 
+	.menu{
+		font-size : x-small;
+		line-height : 800%;
+	}
+	.logo_reseau{
+		position : absolute;
+		width : 20%;
+		height : 30%;
+		top : 25%;
+	}
+	.sous-menu{
+		display : none;
+		line-height : 150%;
+		background-color: rgba(67, 150, 12, 0.315);
+		font-size : xx-small;
+	}
+	.corner_haut_gauche{
+		position : absolute;
+		left : 10%;
+		top : 20%;
+		height: 15%;
+	}
+	.corner_haut_droite{
+		position : absolute;
+		right : 0%;
+		top : 20%;
+		height: 15%;
+	}
+	.corner_bas_gauche{
+		position : absolute;
+		left : 10%;
+		bottom : 7%;
+		height: 15%;
+	}
+	.corner_bas_droite{
+		position : absolute;
+		right : 0%;
+		bottom : 7%;
+		height: 15%;
+	}
+	footer>div>div{
+		display : inline-block;
+		padding-left : 0%;
+		padding-right : 3%;
+	}
+	.bird{
+		display : none;
+	}
+	.bird2{
+		display : none;;
+	}
+	.slider-container {
+		height: 38%;
+		width: 65%;
+		top: 33%;
+	}
+}
+
+@media (max-width: 900px) { 
+	footer>div>div{
+		font-size : small;
+	}
+}
+
+@media (max-width: 650px) { 
+	footer>div>div{
+		font-size : x-small;
+	}
+	
+}
+
+@media (max-width: 620px) { 
+	.corner_haut_gauche{
+		display : none;
+	}
+	.corner_haut_droite{
+		height: 5%;
+	}
+	.corner_bas_gauche{
+		display : none;
+	}
+	.corner_bas_droite{
+		height: 5%;
+	}
+	.menu_lateral{
+		width : 20%;
+	}
+	.foret{
+		width : 80%;
+		margin-left: 20%;
+	}
+	.logo{
+		width: 20%;
+	}
+	.slider-container {
+		left: 30%;
+		top: 40%;
+	}
+	.titre{
+		left: 30%;
+		width: 60%;
+	}
+	.footer{
+		width: 80%;
+		margin-left: 20%;
+	}
+	footer>div>div{
+		font-size : xx-small;
+		padding-left : 0%;
+		padding-right : 1%;
+	}
+	.reseau{
+		width : 20%;
+	}
+}
+
+
+@media (max-width: 340px) { 
+	.foret{
+		height : 10%;
+	}
+	.slider-container {
+		left: 30%;
+		top: 40%;
+	}
+	.corner_haut_droite{
+		top : 10%;
+	}
+	.titre{
+		top : 20%;
+		font-size : x-small;
+	}
+	.footer{
+		width: 80%;
+		margin-left: 20%;
+	}
+	footer>div>div{
+		font-size : xx-small;
+		padding-left : 0%;
+		padding-right : 1%;
+	}
+	.reseau{
+		width : 20%;
+	}
+	.diapo label {
+		width: 8px;
+		height: 8px;
+	}
+	footer>div{
+		line-height: 100%;
+		
+	}
+}
+
+@media (min-width: 310px) {
+    button{
+		display: none;
+	}
+}
+
+@media (max-width: 310px) {
+	button{
+		display: block;
+	}
+	.menu_lateral{
+		position : absolute;
+		display : none;
+		z-index : 9999;
+		width: 30%;
+	}
+	.logo{
+		position: absolute;
+		width: 100%;
+	}
+	.foret{
+		width : 100%;
+		margin-left: 0%;
+	}
+	.corner_bas_gauche{
+		display: block;
+		height: 5%;
+		left: 0%;
+	}
+	.corner_haut_gauche{
+		display: block;
+		height: 5%;
+		left: 0%;
+		top: 10%;
+	}
+	.footer{
+		margin-left: 0%;
+		width : 100%;
+	}
+	.slider-container {
+		left: 5%;
+		top: 35%;
+		width: 90%;
+	}
+	.reseau{
+		width : 100%;
+	}
+	.titre{
+		left : 22%;
+		font-size : x-small;
+	}
+	.menu{
+		line-height : 600%;
+	}
+}

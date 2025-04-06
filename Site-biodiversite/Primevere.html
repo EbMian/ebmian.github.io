@@ -1,0 +1,123 @@
+<html lang="fr">
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="shortcut icon" href="./img_menu/logo.png" />
+	<meta charset="utf-8">
+		<title>Primevères - La Charbonnière Mésange</title>
+	</head>
+    <body>
+        <header>
+        </header>
+		
+		
+        <main  id="border">
+		
+		
+			<div class="menu_lateral" style="display:none;" id="menu">
+				<a href="Accueil.html"><img src="./img_menu/logo.png" alt="logo" class="logo imgmenu"></a>
+				
+				<div class="menu">
+					<div>
+						<a href="Accueil.html">ACCUEIL</a></br>
+					</div>
+					
+					<div class="oiseau">
+						<a href="#">OISEAUX</a></br>
+						<div class="sous-menu">
+							<a href="Mesange.html">Mésanges Charbonnières</a></br>	
+						</div>
+					</div>
+					
+					<div class="poisson">
+						<a href="#">POISSONS</a></br>	
+						<div class="sous-menu">
+							<a href="Bouviere.html">Poisson Bouviere</a></br>
+						</div>
+					</div>
+					
+					<div class="vegetaux">
+						<a href="#">VEGETAUX</a></br>
+						<div class="sous-menu">
+							<a href="Primevere.html">Les primevères</a></br>	
+						</div>
+					</div>
+					
+					<div>
+						<a href="Quiz.html">QUIZ</a></br>
+					</div>
+				
+				</div>
+				
+				
+				
+				<div class="reseau">
+					
+					<a href="https://www.twitter.com/"><img src="./img_menu/Twitter_Logo.png" alt="twitter" class="logo_reseau imgmenu" id="twitter"></a>
+			        <a href="https://www.facebook.com/"><img src="./img_menu/Facebook_logo.png" alt="facebook" class="logo_reseau imgmenu" id="facebook"></a>
+			        <a href="https://www.instagram.com/"><img src="./img_menu/Instagram-logo.jpg" alt="instagram" class="logo_reseau imgmenu" id="instagram"></a>
+			
+				</div>
+			</div>
+			
+			<!--script permettant l'apparition/disparition du menu lateral-->
+			<script>
+				function FonctionMenu() {
+				  var div = document.getElementById("menu");
+				  if (div.style.display === "none") {
+					div.style.display = "block";
+				  } 
+				  else {
+					div.style.display = "none";
+				  }
+				}
+			</script>
+			
+		
+		
+		
+            <div class="grid-conteneur">
+                <div class="colone1"></div>
+                <div class="colone2">
+					<button onclick="FonctionMenu()">MENU</button>
+                    <h1 class="titre">Les primevères à feuilles entières</h1>
+                    <h2 class="titre">Primula integrifolia</h2>
+
+                    <div class="plante"><img src="./img/primevereAfeuillesEntieres1.jpg" alt="Une primevère à fleurs entières" class="p1"></div>
+                    <article>
+                        <h2 class="titre"></h2>
+                        <p>
+                            La Primevère à feuilles entières (Primula integrifolia) est une espèce de plantes herbacées vivaces de la famille des Primulacées.
+                            <div class="plante"><img src="./img/primevereAfeuillesEntieres2.jpg" alt="Une primevère à fleurs entières" class="p2"></div>
+                        </p>
+                    </article>
+                    <article>
+                        <h2 class="titre2">Description</h2>
+                        <p>
+                            Primula integrifolia est une plante hermaphrodite, plus ou moins velue, glanduleuse, visqueuse, de 3 à 6 cm de hauteur.<br>
+                            Ses feuilles se présentent en rosettes basales, à limbe lancéolé ou ovale, vert vif, entier, à bords velus, atténué en pétiole ailé.<br>
+                            L'inflorescence, présente en juillet-août, est une ombelle simple comprenant deux ou trois fleurs, ou des fleurs solitaires, très brièvement pédicellées, sur un pédoncule dépassant sensiblement les feuilles ;<br> 
+                            involucre à bractées linéaires, atteignant au moins la moitié de la longueur du calice. Le calice est circulaire, non anguleux, glanduleux, à dents ovales-obtuses.<br> 
+                            La corolle est rose ou lilas, à tube une fois plus long que le calice, à cinq lobes profondément divisés.<br>
+                            Le fruit se présente sous forme de capsule beaucoup plus courte que le calice.<br>
+                            La pollinisation est entomogame et la dissémination barochore.<br>
+                            Son habitat correspond à des combes à neige et des pelouses rocailleuses, situées entre 1 900 et 2 700 m. La plante est assez commune dans l’Est et le Centre des Pyrénées, très rare en Savoie1.<br>
+                            <div class="plante"><img src="./img/primevereAfeuillesEntieres3.jpg" alt="Une primevère à fleurs entières" class="p3"></div>
+                        </p>
+                    </article>
+                </div>
+                <div class="colone3"></div>
+            </div>
+        </main>
+		
+		
+		
+        <footer class="footer">
+			<div>
+				<div><a href="Mention_legales.html">Mentions légales</a></div>
+				<div><a href=""> Partager cette page </a></div>
+				<div><a href=""> Nous suivre </a></div>
+				<div><a href="A_propos.html">A propos</a></div>
+			</div>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head lang="fr">
+    <meta charset="utf-8">
+    <title>Accueil - La Charbonnière Mésange</title>
+	<link rel="stylesheet" type="text/css" href="css/style_menu.css">
+	<link rel="shortcut icon" href="./img_menu/logo.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+	<img src="./img_menu/foret.png" alt="foret" class="foret">
+	
+	<button onclick="FonctionMenu()">MENU</button>
+	
+	<div class="titre">
+		<img src="./img_menu/bird.jpg" alt="bird" class="bird">
+		<h1>La Charbonnière Mésange</h1>
+		<img src="./img_menu/bird2.jpg" alt="bird2" class="bird2">
+	</div>
+	
+	<div class="slider-container">
+      <div class="diapo">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+		<label for="slide-dot-4"></label>
+		<label for="slide-dot-5"></label>
+		<label for="slide-dot-6"></label>
+		<label for="slide-dot-7"></label>
+		<label for="slide-dot-8"></label>
+      </div>
+		<input id="slide-dot-1" type="radio" name="slides" checked />
+      <div class="slide slide-1"></div>
+		<input id="slide-dot-2" type="radio" name="slides" />
+      <div class="slide slide-2"></div>
+		<input id="slide-dot-3" type="radio" name="slides" />
+      <div class="slide slide-3"></div>
+	    <input id="slide-dot-4" type="radio" name="slides" />
+      <div class="slide slide-4"></div>
+	    <input id="slide-dot-5" type="radio" name="slides" />
+      <div class="slide slide-5"></div>
+	    <input id="slide-dot-6" type="radio" name="slides" />
+      <div class="slide slide-6"></div>
+	    <input id="slide-dot-7" type="radio" name="slides" />
+      <div class="slide slide-7"></div>
+	    <input id="slide-dot-8" type="radio" name="slides" />
+      <div class="slide slide-8"></div>
+    </div>
+	
+	
+	<div class="menu_lateral" id="menu">
+		<a href="Accueil.html"><img src="./img_menu/logo.png" alt="logo" class="logo"></a>
+		
+		<div class="menu">
+			<div>
+				<a href="Accueil.html">ACCUEIL</a></br>
+			</div>
+			
+			<div class="oiseau">
+				<a href="#">OISEAUX</a></br>
+				<div class="sous-menu">
+					<a href="Mesange.html">Mésanges Charbonnières</a></br>	
+				</div>
+			</div>
+			
+			<div class="poisson">
+				<a href="#">POISSONS</a></br>	
+				<div class="sous-menu">
+					<a href="Bouviere.html">Poisson Bouviere</a></br>
+				</div>
+			</div>
+			
+			<div class="vegetaux">
+				<a href="#">VEGETAUX</a></br>
+				<div class="sous-menu">
+					<a href="Primevere.html">Les primevères</a></br>	
+				</div>
+			</div>
+			
+			<div>
+				<a href="Quiz.html">QUIZ</a></br>
+			</div>
+			
+		</div>
+		
+		<!--script permettant l'apparition/disparition du menu lateral-->
+			<script>
+				function FonctionMenu() {
+				  var div = document.getElementById("menu");
+				  if (div.style.display === "none") {
+					div.style.display = "block";
+				  } 
+				  else {
+					div.style.display = "none";
+				  }
+				  
+				}
+			</script>
+		
+		<div class="reseau">
+			
+			<a href="https://www.twitter.com/"><img src="./img_menu/Twitter_Logo.png" alt="twitter" class="logo_reseau" id="twitter"></a>
+			<a href="https://www.facebook.com/"><img src="./img_menu/Facebook_logo.png" alt="facebook" class="logo_reseau" id="facebook"></a>
+			<a href="https://www.instagram.com/"><img src="./img_menu/Instagram-logo.jpg" alt="instagram" class="logo_reseau" id="instagram"></a>
+			
+		</div>
+	</div>
+	
+	<img src="./img_menu/haut_gauche.png" alt="corner_haut_gauche" class="corner_haut_gauche">
+	<img src="./img_menu/haut_droite.png" alt="corner_haut_droite" class="corner_haut_droite">
+	<img src="./img_menu/bas_droite.png" alt="corner_bas_droite" class="corner_bas_droite">
+	<img src="./img_menu/bas_gauche.png" alt="corner_bas_gauche" class="corner_bas_gauche">
+	
+	<footer class="footer">
+		<div>
+			<div><a href="Mention_legales.html">Mentions légales</a></div>
+			<div><a href=""> Partager cette page </a></div>
+			<div><a href=""> Nous suivre </a></div>
+			<div><a href="A_propos.html">A propos</a></div>
+		</div>
+	</footer>
+  </body>
+</html>

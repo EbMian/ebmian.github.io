@@ -1,0 +1,130 @@
+<html lang="fr">
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="shortcut icon" href="./img_menu/logo.png" />
+	<meta charset="utf-8">
+		<title>Poisson Bouvière - La Charbonnière Mésange</title>
+	</head>
+    <body>
+        <header>
+        </header>
+		
+		
+		
+        <main  id="border">
+		
+		
+			<div class="menu_lateral" style="display:none;" id="menu">
+				<a href="Accueil.html"><img src="./img_menu/logo.png" alt="logo" class="logo imgmenu"></a>
+				
+				<div class="menu">
+					<div>
+						<a href="Accueil.html">ACCUEIL</a></br>
+					</div>
+					
+					<div class="oiseau">
+						<a href="#">OISEAUX</a></br>
+						<div class="sous-menu">
+							<a href="Mesange.html">Mésanges Charbonnières</a></br>	
+						</div>
+					</div>
+					
+					<div class="poisson">
+						<a href="#">POISSONS</a></br>	
+						<div class="sous-menu">
+							<a href="Bouviere.html">Poisson Bouviere</a></br>
+						</div>
+					</div>
+					
+					<div class="vegetaux">
+						<a href="#">VEGETAUX</a></br>
+						<div class="sous-menu">
+							<a href="Primevere.html">Les primevères</a></br>	
+						</div>
+					</div>
+					
+					<div>
+						<a href="Quiz.html">QUIZ</a></br>
+					</div>
+				
+				</div>
+				
+				
+				
+				<div class="reseau">
+					
+					<a href="https://www.twitter.com/"><img src="./img_menu/Twitter_Logo.png" alt="twitter" class="logo_reseau imgmenu" id="twitter"></a>
+			        <a href="https://www.facebook.com/"><img src="./img_menu/Facebook_logo.png" alt="facebook" class="logo_reseau imgmenu" id="facebook"></a>
+			        <a href="https://www.instagram.com/"><img src="./img_menu/Instagram-logo.jpg" alt="instagram" class="logo_reseau imgmenu" id="instagram"></a>
+			
+				</div>
+			</div>
+			
+			<!--script permettant l'apparition/disparition du menu lateral-->
+			<script>
+				function FonctionMenu() {
+				  var div = document.getElementById("menu");
+				  if (div.style.display === "none") {
+					div.style.display = "block";
+				  } 
+				  else {
+					div.style.display = "none";
+				  }
+				}
+			</script>
+		
+		
+		
+		
+		
+            <div class="grid-conteneur">
+                <div class="colone1"></div>
+                <div class="colone2">
+					<button onclick="FonctionMenu()">MENU</button>
+                    <h1 class="titre">Les bouvières</h1>
+                    <h2 class="titre">Rhodeus amarus</h2>
+                
+                    <div class="poisson"><img src="./img/bouviere1.jpg" alt="Une bouvière " class="b1"></div>
+                    <article>
+                        <h2 class="titre2"></h2>
+                        <p>
+                            La Bouvière est une espèce de petits poissons d'eau douce de la famille des cyprinidés. Elle vit en Europe depuis le bassin du Rhône en France jusqu'à la Neva en Russie.<br>
+                            <div class="poisson"><img src="./img/bouviere2.jpg" alt="Une bouvière" class="b2"></div>
+                        </p>
+                    </article>
+                    <article>
+                        <h2 class="titre2">Systématique</h2>
+                        <p>
+                            Il a été décrit à l'origine comme Rhodeus sericeus par Pallas en 1776.<br> 
+                            Néanmoins, il a également été décrit par Bloch en 1782 comme Rhodeus amarus. 
+                            Actuellement, c'est ce dernier nom qui est accepté comme nom scientifique pour la Bouvière européenne. Dans son aire de répartition, c'est la seule espèce de son genre, Rhodeus.<br> 
+                            C'est un vestige de l'époque où ces bouvières étaient réunies à l'espèce de Sibérie, Rhodeus sericeus.<br>
+                            <div class="poisson"><img src="./img/bouviere3.jpg" alt="Une bouvière" class="b3"></div>
+                        </p>
+                    </article>
+                    <article>
+                        <h2 class="titre2">Description, mode de vie</h2>
+                        <p>
+                            Ce poisson atteint une taille de 5 à 6 cm (12 cm maximum). Il se trouve parmi les plantes dans des eaux peu profondes. Il se nourrit principalement de plantes, et, dans une moindre mesure, de vers, de crustacés, d'insectes et de larves.<br>
+
+                            Il entretient une relation de parasitisme réciproque avec la moule d'eau douce. C'est un exemple d'interactions durables entre deux espèces :<br>
+
+                            la bouvière pond ses œufs dans la moule, où les alevins se nourrissent du sang de celle-ci ;<br>
+                            la moule, ensuite, émet des larves appelées glochidies, qui s'attachent aux branchies ou à la peau de la bouvière, ou d'autres poissons d'eau douce, et croissent dans un kyste jusqu'à ce qu'ils soient prêts à éclore.
+                        </p>
+                    </article>
+                </div>
+                <div class="colone3"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+			<div>
+				<div><a href="Mention_legales.html">Mentions légales</a></div>
+				<div><a href=""> Partager cette page </a></div>
+				<div><a href=""> Nous suivre </a></div>
+				<div><a href="A_propos.html">A propos</a></div>
+			</div>
+		</footer>
+    </body>
+</html>

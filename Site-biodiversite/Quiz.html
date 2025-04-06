@@ -1,0 +1,191 @@
+<html lang="fr">
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/js.js"></script>
+	<link rel="shortcut icon" href="./img_menu/logo.png" />
+	<meta charset="utf-8">
+		<title>Quiz - La Charbonnière Mésange</title>
+        <style>
+			.s{
+                display: inline-block;
+            }
+            img {
+            border: 0px;
+            }
+		</style>
+	</head>
+    <body>
+        <header>
+        </header>
+		<div class="menu_lateral" id="menu" style="display:none">
+			<img src="./img_menu/logo.png" alt="logo" class="logo">
+			
+			<div class="menu">
+				<div>
+					<a href="Accueil.html">ACCUEIL</a></br>
+				</div>
+				
+				<div class="oiseau">
+					<a href="#">OISEAUX</a></br>
+					<div class="sous-menu">
+						<a href="Mesange.html">Mésanges Charbonnières</a></br>	
+					</div>
+				</div>
+				
+				<div class="poisson">
+					<a href="#">POISSONS</a></br>	
+					<div class="sous-menu">
+						<a href="Bouviere.html">Poisson Bouviere</a></br>
+					</div>
+				</div>
+				
+				<div class="vegetaux">
+					<a href="#">VEGETAUX</a></br>
+					<div class="sous-menu">
+						<a href="Primevere.html">Les primevères</a></br>	
+					</div>
+				</div>
+				
+				<div>
+					<a href="Quiz.html">QUIZ</a></br>
+				</div>
+				
+			</div>
+		
+		<!--script permettant l'apparition/disparition du menu lateral-->
+			<script>
+				function FonctionMenu() {
+				  var div = document.getElementById("menu");
+				  if (div.style.display === "none") {
+					div.style.display = "block";
+				  } 
+				  else {
+					div.style.display = "none";
+				  }
+				  
+				}
+			</script>
+			
+			<div class="reseau">
+			
+				<img src="./img_menu/Twitter_Logo.png" alt="twitter" class="logo_reseau" id="twitter">
+				<img src="./img_menu/Facebook_logo.png" alt="facebook" class="logo_reseau" id="facebook">
+				<img src="./img_menu/Instagram-logo.jpg" alt="instagram" class="logo_reseau" id="instagram">
+				
+			</div>
+		</div>
+		
+		
+        <main id="border">
+            <div class="grid-conteneur">
+                <div class="colone1"></div>
+                <div class="colone2">
+					<button onclick="FonctionMenu()">MENU</button>
+                    <h1 class="titre">Le Quiz!</h1>
+                    
+                    <fieldset>
+                        <legend><h2>La Mésange charbonnière</h2></legend>
+                    
+                        <h3 id="Q1">Quel est la moyenne de la taille de cet animal?</h3>
+                        <input class="Quest" type="radio" name="Quest1"  id="id11" value=0> <div class="s">De 7 à 9cm.</div></input>
+			            <input class="Quest" type="radio" name="Quest1"  id="id12" value=0> <div class="s">De 10 à 12cm.</div></input>
+			            <input class="Quest" type="radio" name="Quest1"  id="id13" value=1> <div class="s">De 13 à 15cm.</div></input>
+			            <input class="Quest" type="radio" name="Quest1"  id="id14" value=0> <div class="s">De 16 à 18cm.</div></input>
+
+                        </br></br>
+
+                        <h3 id="Q2">Quels sont ses régimes alimentaires?</h3>
+                        <input type="checkbox" class="Quest2 Quest"  id="id21" value=0><div class="s"> Herbivore</div></input>
+			            <input type="checkbox" class="Quest2 Quest"  id="id22" value=1><div class="s"> Insectivore</div></input>
+			            <input type="checkbox" class="Quest2 Quest"  id="id23" value=0><div class="s"> Carnivore</div></input>
+			            <input type="checkbox" class="Quest2 Quest"  id="id24" value=1><div class="s"> Granivore</div></input>
+                        <input type="checkbox" class="Quest2 Quest"  id="id25" value=1><div class="s"> Frugivore</div></input>
+
+                        </br></br>
+
+                        <h3 id="Q3">Combien d'oeufs maximums peuvent-t-ils avoir par an?</h3>
+                        <input class="Quest" type="radio" name="Quest3"  id="id31" value=0 ><div class="s"> 8</div></input>
+			            <input class="Quest" type="radio" name="Quest3"  id="id32" value=0><div class="s"> 12</div></input>
+			            <input class="Quest" type="radio" name="Quest3"  id="id33" value=0><div class="s"> 18</div></input>
+			            <input class="Quest" type="radio" name="Quest3"  id="id34" value=1><div class="s"> 24</div></input>
+                    </fieldset>
+
+                    </br></br>
+                    
+                    <fieldset>
+                        <legend><h2>La Bouvière</h2></legend>
+
+                        <h3 id="Q4">Ce sont sont des poissons...</h3>
+                        <input class="Quest" type="radio" name="Quest4"  id="id41" value=1><div class="s"> D'eau douce.</div></input>
+			            <input class="Quest" type="radio" name="Quest4"  id="id42" value=0><div class="s"> D'eau de mer.</div></input>
+
+                        </br></br>
+
+                        <h3 id="Q5">Quel est l'aliment composant sa nourriture principale</h3>
+                        <input class="Quest" type="radio" name="Quest5"  id="id51" value=0><div class="s"> Les crustacés</div></input>
+			            <input class="Quest" type="radio" name="Quest5"  id="id52" value=0><div class="s"> Les insectes</div></input>
+			            <input class="Quest" type="radio" name="Quest5"  id="id53" value=0><div class="s"> Les larves</div></input>
+			            <input class="Quest" type="radio" name="Quest5"  id="id54" value=1><div class="s"> Les plantes</div></input>
+                        
+                        </br></br>
+
+                        <h3 id="Q6">Avec qui cette espèce entretient une relation de paresitisme réciproque?</h3>
+                        <input type="checkbox" class="Quest6 Quest"  id="id61" value=1><div class="s"> La moule</div></input>
+			            <input type="checkbox" class="Quest6 Quest"  id="id62" value=0><div class="s"> Le saumon</div></input>
+			            <input type="checkbox" class="Quest6 Quest"  id="id63" value=1><div class="s"> Les alevins</div></input>
+			            <input type="checkbox" class="Quest6 Quest"  id="id64" value=0><div class="s"> Les algues</div></input>
+                        <input type="checkbox" class="Quest6 Quest"  id="id65" value=0><div class="s"> Les humains</div></input>
+                    </fieldset>
+
+                    </br></br>
+
+                    <fieldset>
+                        <legend><h2>La primevère à feuilles entières</h2></legend>
+
+                        <h3 id="Q7">L'inflorescence est présente à quel période?</h3>
+                        <input type="checkbox" class="Quest7 Quest"  id="id71" value=0><div class="s"> Mai</div></input>
+			            <input type="checkbox" class="Quest7 Quest"  id="id72" value=0><div class="s"> Juin</div></input>
+			            <input type="checkbox" class="Quest7 Quest"  id="id73" value=1><div class="s"> Juillet</div></input>
+			            <input type="checkbox" class="Quest7 Quest"  id="id74" value=1><div class="s"> Août</div></input>
+                        <input type="checkbox" class="Quest7 Quest"  id="id75" value=0><div class="s"> Septembre</div></input>
+                        
+                        </br></br>
+
+                        <h3 id="Q8">Ont-ils des fruits?</h3>
+                        <input class="Quest" type="radio" name="Quest8"  id="id81" value=1><div class="s"> Oui</div></input>
+			            <input class="Quest" type="radio" name="Quest8"  id="id82" value=0><div class="s"> Non</div></input>
+
+                        </br></br>
+
+                        <h3 id="Q9">Quels sont ses habitats?</h3>
+                        <input type="checkbox" class="Quest9 Quest"  id="id91" value=0><div class="s"> Les plaines</div></input>
+			            <input type="checkbox" class="Quest9 Quest"  id="id92" value=0><div class="s"> Les collines</div></input>
+			            <input type="checkbox" class="Quest9 Quest"  id="id93" value=1><div class="s"> Les pelouses rocailleuses</div></input>
+			            <input type="checkbox" class="Quest9 Quest"  id="id94" value=1><div class="s"> Les combes à neiges</div></input>
+                    </fieldset>
+                    
+                    </br></br>
+                    
+                    <div id="magie">
+                        <fieldset id="pouf">
+                            <legend><h2>Validation</h2></legend>
+                            <input type="button" id="boutonvalidation" value="Verifiez vos réponses ici" onClick='traitement()'></input>
+                            <div>
+                                <ul id="valerreurs">
+                                    <div></div>
+                                </ul>
+                                <div id="futurbouton"></div> 
+                            </div>
+                        </fieldset>
+                    </div>
+        </main>
+        <footer class="footer">
+			<div>
+				<div><a href="Mention_legales.html">Mentions légales</a></div>
+				<div><a href=""> Partager cette page </a></div>
+				<div><a href=""> Nous suivre </a></div>
+				<div><a href="A_propos.html">A propos</a></div>
+			</div>
+		</footer>
+    </body>
+</html>

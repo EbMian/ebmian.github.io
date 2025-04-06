@@ -1,0 +1,291 @@
+/*general*/
+body, html {
+  font-family : yugee-technosans,Arial;
+  background-color : #B2D2A4;
+  margin : 0;
+  /*height : 100%;*/
+  position : relative;
+}
+
+@font-face {
+    font-family: yugee-technosans;
+    src : url(../fonts/yugee-technosans/YugeeTechnoSans.otf);
+}
+
+h1{
+    text-align:center;
+}
+.titre {
+    text-align: center;
+}
+p {
+    text-align:justify;
+    font-size:large;
+}
+a{
+	text-decoration: none;
+	color :#CEF3CE;
+}
+.colonne_centre {
+    text-align: center;
+}
+img {
+    border: 3px solid black;
+}
+@media (min-width: 1000px) { 
+    /*Styles pour les pages qui font au moins 500 pixels.*/
+    .grid-conteneur {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+}
+@media (max-width: 1000px) { 
+    /*Styles pour les pages qui font au plus 500 pixels.*/
+    .colone1, .colone3 {
+        display: none 
+    }
+}
+#border { 
+    border: 100px solid transparent;
+    margin: 0px;
+    border-image: url(border.png) 150  round;
+}
+
+
+
+
+
+.a{
+	text-decoration: none;
+	color :#1A4314;
+}
+
+
+
+
+
+/*style pour le corps de la page mesange*/
+div.mesange {
+    text-align: center;   
+}
+.mesange > img:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.mesange > img {
+    border: 3px solid black;
+}
+div.image {
+    text-align: center;
+}
+
+
+/*style pour le corps de la page poisson*/
+.b1 {
+    width: 200px;
+    height: 140px;
+    text-align: center;
+}
+.b2 {
+    width: 305px;
+    height: 192px;
+    text-align: center;
+}
+.b3 {
+    width: 300px;
+    height: 170px;
+    text-align: center;
+}
+.poisson {
+    text-align: center;
+}
+.poisson > img:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.poisson > img {
+    border: 3px solid black;
+}
+div.image {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*style pour le corps de la page vegetaux*/
+.p1 {
+    text-align: center;
+}
+.p2 {
+    text-align: center;
+}
+
+.p3 {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.plante {
+    text-align: center;
+}
+.plante > img:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.plante > img {
+    border: 3px solid black;
+}
+div.image {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+ /*css pour le pied de la page*/
+.footer{
+    width: 100%;
+    position: absolute;
+	bottom: 0;
+}
+footer>div{
+    text-align: center;
+    line-height: 400%;
+	
+  }
+footer{
+    background-color: rgba(67, 150, 12, 0.315);
+    border: 1px #1A4314;
+    color: #c7f7dc;
+    text-align: center;
+  
+}
+footer>div>div{
+	display : inline-block;
+	padding-left : 5%;
+	padding-right : 3%;
+}
+
+
+
+/*css du menu latéral*/
+.menu_lateral{
+	background-color: #1A4314;
+    height: 100%;
+    position: fixed;
+    width: 10%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.menu{
+	width : 50%;
+	padding : 25%;
+	text-align : center;
+	top : 25%;
+	line-height : 400%;
+	position : relative;
+}
+.logo{
+	position: absolute;
+    width: 100%;
+}
+.reseau{
+	bottom: 0%;
+    position: absolute;
+    height: 7%;
+	width : 100%;
+}
+.logo_reseau{
+	position : absolute;
+	width : 20%;
+	height : 40%;
+	top : 25%;
+}
+#facebook{
+	right : 10%;
+}
+#twitter{
+	left : 40%;
+}
+#instagram{
+	left : 10%;
+}
+.sous-menu{
+	display : none;
+	line-height : 150%;
+	background-color: rgba(67, 150, 12, 0.315);
+	font-size : small;
+}
+.oiseau:hover .sous-menu {
+	display:block;
+}
+.poisson:hover .sous-menu {
+	display:block;
+}
+.vegetaux:hover .sous-menu {
+	display:block;
+}
+.menu > div{
+	width : 100%;
+}
+
+.imgmenu {
+    border: 0px;
+}
+
+
+
+/*Style pour le boutton d'affichage du menu*/
+button {
+	position: absolute;
+    text-align : center;
+    z-index: 1;
+	color: #c7f7dc;
+	background-color: #1A4314;
+	font-weight: bold;
+	font-size: large;
+	/*Personnaliser les bordures du bouton*/
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	border: 2px solid #46a28d;
+	/*Effet de transition pourle changement de couleur du boutton*/
+	-webkit-transition: all 1.8s ease-out 0s;
+	-moz-transition: all 1.8s ease-out 0s;
+	transition: all 1.8s ease-out 0s;
+}
+button:hover{
+	background-color: black;
+}
+
+
+
+
+
+
+

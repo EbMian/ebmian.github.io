@@ -1,0 +1,123 @@
+<html lang="fr">
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="shortcut icon" href="./img_menu/logo.png" />
+	<meta charset="utf-8">
+		<title>A propos - La Charbonnière Mésange</title>
+	</head>
+    <body>
+	
+	<div id="wrap">
+        <header>
+        </header>
+		
+		
+        <main id="border">
+		
+			<div class="menu_lateral" style="display:none;" id="menu">
+				<a href="Accueil.html"><img src="./img_menu/logo.png" alt="logo" class="logo imgmenu"></a>
+				
+				<div class="menu">
+					<div>
+						<a href="Accueil.html">ACCUEIL</a></br>
+					</div>
+					
+					<div class="oiseau">
+						<a href="#">OISEAUX</a></br>
+						<div class="sous-menu">
+							<a href="Mesange.html">Mésanges Charbonnières</a></br>	
+						</div>
+					</div>
+					
+					<div class="poisson">
+						<a href="#">POISSONS</a></br>	
+						<div class="sous-menu">Bpage_poisson_bouviere.html">Poisson Bouviere</a></br>
+						</div>
+					</div>
+					
+					<div class="vegetaux">
+						<a href="#">VEGETAUX</a></br>
+						<div class="sous-menu">
+							<a href="Primevere.html">Les primevères</a></br>	
+						</div>
+					</div>
+					
+					<div>
+						<a href="Quiz.html">QUIZ</a></br>
+					</div>
+				
+				</div>
+				
+				
+				
+				<div class="reseau">
+					
+					<a href="https://www.twitter.com/"><img src="./img_menu/Twitter_Logo.png" alt="twitter" class="logo_reseau imgmenu" id="twitter"></a>
+			        <a href="https://www.facebook.com/"><img src="./img_menu/Facebook_logo.png" alt="facebook" class="logo_reseau imgmenu" id="facebook"></a>
+			        <a href="https://www.instagram.com/"><img src="./img_menu/Instagram-logo.jpg" alt="instagram" class="logo_reseau imgmenu" id="instagram"></a>
+			
+				</div>
+			</div>
+			
+			<!--script permettant l'apparition/disparition du menu lateral-->
+			<script>
+				function FonctionMenu() {
+				  var div = document.getElementById("menu");
+				  if (div.style.display === "none") {
+					div.style.display = "block";
+				  } 
+				  else {
+					div.style.display = "none";
+				  }
+				  
+				}
+			</script>
+		
+		
+		
+		
+		
+		
+		
+            <div class="grid-conteneur">
+                <div class="colone1"></div>
+                <div class="colone2">
+					<button onclick="FonctionMenu()">MENU</button>
+					<br>
+                    <h1 class="titre">Qui sommes nous ?</h1>
+                    <article>
+						<h2>Informations générales</h2>
+						<p>
+							<br>
+								Nous sommes un groupe de quatre étudiants en première année de BUT Informatique à l'IUT de Dijon Antenne de Nevers.
+							</br>
+							<br>
+								Elise Blin, Hugo Ducret, Ulysse Berger, Ebrotié Mian.
+							</br>
+							<br>
+								Dans le cadre de notre SAE (situation d’apprentissage et d’évaluation) Recueil de besoin client, nous devons réaliser un site vitrine. 
+								Nous avons donc choisi de réaliser un site sur la biodiversité en France.
+							</br>
+						</p>
+						<p>
+							L’entreprise fictive pour laquelle nous devons réaliser ce site se nomme La charbonnière Mésange. 
+							Il s’agit d’une entreprise qui a pour but de recenser les nidifications des oiseaux, ainsi que les sites de pontes et de reproduction de ces derniers. 
+							Plus généralement la vocation de La charbonnière Mésange est d'apporter de l'information au grand public et de montrer la complexité de la biodiversité.
+						</p>
+					</article>
+                </div>
+                <div class="colone3"></div>
+            </div>
+        </main>
+        <footer class="footer">
+			<div>
+				<div><a href="Mention_legales.html">Mentions légales</a></div>
+				<div><a href=""> Partager cette page </a></div>
+				<div><a href=""> Nous suivre </a></div>
+				<div><a href="A_propos.html">A propos</a></div>
+			</div>
+		</footer>
+		
+	</div>
+    </body>
+</html>
