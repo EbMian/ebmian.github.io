@@ -1,0 +1,7 @@
+.lightGrayGrad {
+    background-image: linear-gradient(rgba(248,249,250), white);
+}
+
+.lightBlueGrad {
+    background-image: linear-gradient(aliceblue, white);
+}
