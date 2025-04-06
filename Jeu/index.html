@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zeldo</title>
+    <style>
+        .row {
+    display: flex;
+}
+
+.tile {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url('kenney_tiny-town/Tiles/tile_0000.png');
+    text-align: center;
+    
+}
+.grass{
+    background-image: url('kenney_tiny-town/Tiles/tile_0001.png');
+}
+.flower{
+    background-image: url('kenney_tiny-town/Tiles/tile_0002.png');
+}
+.gravel{
+    background-image: url('kenney_tiny-town/Tiles/tile_0043.png');
+}
+.entryEnclosure{
+    background-image: url('kenney_tiny-town/Tiles/tile_0132.png');
+}
+.Mushroom{
+    background-image: url('kenney_tiny-town/Tiles/tile_0029.png');
+}
+.Plant{
+    background-image: url('kenney_tiny-town/Tiles/tile_0017.png');
+}
+.BridgeA{
+    background-image: url('kenney_tiny-town/Tiles/tile_0097.png');
+}
+.BridgeB{
+    background-image: url('kenney_tiny-town/Tiles/tile_0109.png');
+}
+.BridgeC{
+    background-image: url('kenney_tiny-town/Tiles/tile_0121.png');
+}
+.DurtTombstone{
+    background-image: url('kenney_tiny-dungeon/Tiles/tile_0066.png');
+}
+
+
+.inventory {
+    margin-top: 5px;
+    border: solid 1px;
+    width: 50px;
+    height: 50px;
+
+}
+.inventory > img {
+   width: 100%;
+   height: 100%;
+}
+    </style>
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="kenney_tiny-dungeon/Tiles/tile_0085.png">
+
+</head>
+<body>
+
+    <div style="display:flex" >
+        <div id="game-board"></div>
+    </div>
+
+    <div style="display:flex" >
+        <div id="inventory-board"></div>
+    </div> 
+    
+    <div id="game-container">
+        <!-- Le plateau de jeu sera généré dynamiquement ici     ;
+-->
+    </div>
+
+<div id="player-stats">
+        <!-- Le plateau de jeu sera généré dynamiquement ici -->
+    </div>
+
+    <div id="current-turn">
+        <!-- Le plateau de jeu sera généré dynamiquement ici -->
+    </div>
+    
+    <div id="menu">
+        <button id="start-game" onclick="disparaitre(); afficher();">Start Zeldo</button>
+        <div id="action-buttons">
+            <button id="attack-button" style="display: none;" onclick="afficherRegles();">Objectifs</button>
+            <button id="defend-button" style="display: none;" onclick="afficherControles();">Controles</button>
+            <button id="use-item-button" style="display: none;">Inventaire</button>
+        </div>
+    </div>  
+
+    <div id="rules" class="rules">
+        <div class="rules-content">
+            <span class="close">&times;</span>
+            <span class="close-text">[Appuyer sur O pour fermer]</span>
+            <img src="img/objectifs.png" alt="controles" style="width:40%">
+        </div>
+    </div>
+
+    <div id="controls" class="controls">
+        <div class="controls-content">
+            <span class="close">&times;</span>
+            <span class="close-text">[Appuyer sur C pour fermer]</span>
+            <img src="img/controls.png" alt="controles" style="width:40%">
+        </div>
+    </div>
+
+    <div id="bravo" class="bravo">
+        <div class="bravo-content">
+            <span class="closeBravo">&times;</span>
+            <img src="img/bravo.png" alt="Bravo" style="width:40%;">
+        </div>
+    </div>
+
+    <div id="erreur" class="error">
+        <div class="error-content">
+            <span class="closeError">&times;</span>
+            <img src="img/erreur.png" alt="Erreur" style="width:40%;">
+        </div>
+    </div>
+
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <img src="img/dialog.png" alt="Dialog" style="width:40%;">
+        </div>
+    </div>
+
+    <div id="fin" class="bravo">
+        <div class="bravo-content">
+            <span class="closeBravo">&times;</span>
+            <img src="img/fin.png" alt="Fin" style="width:40%;">
+        </div>
+    </div>
+
+    <div id="health-bar">
+        <div id="health-level"></div>
+    </div>
+    <div id="timer">00:00:00</div>
+    
+    <div id="oops" class="error">
+        <div class="error-content">
+            <img src="img/oops.png" alt="Oops" style="width:40%;">
+        </div>
+    </div>
+    
+      
+    <div id="gameover" class="gameover">
+        <div class="gameover-content">
+            <img src="img/go.png" alt="Game Over" style="width:40%;">
+            <p>Appuie sur F5 pour rejouer</p>
+        </div>
+    </div>
+    <div id="volumeContainer" class="volume-container">
+        <input type="range" min="0" max="100" value="50" step="1" class="volume-slider" id="volumeSlider">
+        <div class="volume-label" id="volumeLabel">50</div>
+      </div>
+      <audio id="audioPlayer" src="Son.mp3"></audio>
+      
+    
+    
+      
+    
+    <script src="Tile.js"></script>
+    <script src="Board.js"></script>
+    <script src="Object.js"></script>
+    <script src="Inventory.js"></script>
+    <script src="Monster.js"></script>
+    <script src="Player.js"></script>
+    <script src="game.js"></script>
+
+
+</body>
+</html>
