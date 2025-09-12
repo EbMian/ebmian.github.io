@@ -355,8 +355,7 @@ button:hover{
 	}
 	.logo_reseau{
 		position : absolute;
-		width : 20%;
-		height : 30%;
+		width : 20px;
 		top : 25%;
 	}
 	.sous-menu{
@@ -386,8 +385,7 @@ button:hover{
 	}
 	.logo_reseau{
 		position : absolute;
-		width : 20%;
-		height : 30%;
+		width : 15px;
 		top : 25%;
 	}
 	.sous-menu{
