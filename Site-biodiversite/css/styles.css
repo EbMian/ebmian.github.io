@@ -222,10 +222,10 @@ footer>div>div{
 }
 .logo_reseau{
 	position : absolute;
-	width : 20%;
-	height : 40%;
+	width : 20px;
 	top : 25%;
 }
+
 #facebook{
 	right : 10%;
 }
