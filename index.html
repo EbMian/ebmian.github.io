@@ -10,19 +10,30 @@
 </head>
 <body>
     <header>
-        <img class="img-header" src="Images/header.jpeg" alt="Conception de site web">
-        <div class="text-center">
-            <div class="fw-bold">
-                <img class="mt-md-5 rounded-circle" src="Images/ebrotie-mian.png" alt="Photo Ebrotié MIAN" style="width: 50%; max-width: 200px;">
+
+        <div class="text-center text-white">
+            <div class="fw-bold" style="background-image: url('Images/header.png'); background-size: cover; text-shadow: 3px 3px 5px black;">
+                <img class="mt-3 mt-md-5 rounded-circle" src="Images/ebrotie-mian.png" alt="Photo Ebrotié MIAN" style="width: 50%; max-width: 200px;">
                 <h1 class="fw-bold mt-3 my-md-4">Ebrotié William MIAN</h1>
                 <p class="mb-0">Étudiant en 1ère année de Mastère Lead Developer Front End</p>
                 <p>(Titre RNCP n° 38590 - Manager de l'ingénierie numérique)</p>
-                <a href="https://www.ecv.fr/digital/mastere-developpement-web/">École de Création Visuelle de Paris - ECV Paris</a>
-                <p>En recherche d'une alternance</p>
-                <img style="width: 25px;" src="Images/Icones/linkedin.png" alt="Logo de LinkedIn">
-                <a class="me-3" href="https://www.linkedin.com/in/ebrotie-william-mian">Profil LinkedIn</a>
-                <a href="mailto:ebrotie.mian1@gmail.com">ebrotie.mian1@gmail.com</a>
+                <div>
+                    <img style="width: 25px;" src="Images/Icones/ecv.png" alt="Logo de l'ECV">
+                    <span>École de Création Visuelle - Campus Paris Digital</span>
+                    <a href="https://www.ecv.fr/digital/mastere-developpement-web/">ECV Paris</a>
+                </div>
+                <div class="mt-4 pb-5 text-center">
+                    <button class="btn" type="button" style="background-color: orange;">
+                        <img style="width: 25px;" src="Images/Icones/linkedin.png" alt="Logo de LinkedIn">
+                        <a class="me-3" href="https://www.linkedin.com/in/william-mian">Profil LinkedIn</a>
+                    </button>
+                    <button class="btn" style="background-color: yellow;" type="button">
+                        <img style="width: 25px;" src="Images/Icones/email.png" alt="Icône de couriel">
+                        <a href="mailto:ebrotie.mian1@gmail.com">ebrotie.mian1@gmail.com</a>
+                    </button>
+                </div>
                 <div class="mb-3">
+                </div>
                     
                     
                 </div>
@@ -76,14 +87,14 @@
                             </div> 
                         </div>
                     </div>-->
-                    <div class="mb-3 justify container-margin" style="padding-top: 100px; padding-bottom: 100px; margin-top: 20%;">
+                    <div class="mb-3 justify container-margin" style="padding-top: 100px; padding-bottom: 100px; background-color: #c8e7fa;">
                         <h2 class="fw-bold mb-3">À propos de moi</h2>
                         <p class="d-inline">Je suis titulaire d'un BUT Informatique (niveau licence) depuis septembre 2025. Il s'agit du BUT informatique parcours&nbsp;: Réalisation d'applications.
                             J'ai réalisé mes deux dernières années de BUT en alternance chez
                         </p>
                         <a href="https://softech58.fr">SofTech58,</a>
                         <p class="d-inline">où mes tâches consistaient notamment à&nbsp;:</p>
-                        <ul>
+                        <ul class="mt-2">
                             <li>La proposition de designs et la création de maquettes de site et applcations web ;</li>
                             <li>L'intégration de ces maquettes en pages web en utilisant les langages HTML, CSS et JavaScript ainsi que la librairie jQuery et le framework Bootstrap ;</li>
                             <li>La participation à certaines des réunions avec les clients, où je présentais mon avancé dans la création des différentes pages et prenais note des éléments à ajouter et/ou à modifier.</li>
@@ -93,41 +104,83 @@
                             Ainsi, nous avons appris de nombreux langages informatique, que ce soit du côté front-end (partie visuelle d'un site ou d'une application) ou du côté back-end (partie non-visible par l'utilisateur de l'application, il peut s'agir entre autres de la gestion d'une base de données).
                         </p> -->
                         <div>
-                            <h5 class="fw-bold mb-3 mt-md-5 pt-md-5 mb-md-4 text-center">Compétences informatique&nbsp;:</h5>
-                            <div class="d-lg-flex justify-content-center mb-5 pb-md-5">
-                                <div class="d-flex overflow-scroll">
-                                    <div class="d-flex me-4 me-md-5">
-                                        <div class="me-2"><img src="Images/Icones/html-5.png" width="25px" alt="Icône du langage HTML"></div>
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="d-flex me-4 me-md-5">
-                                        <div class="me-2"><img src="Images/Icones/css-3.png" width="25px" alt="Icône du langage CSS"></div>
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="d-flex me-5">
-                                        <div class="me-2"><img src="Images/Icones/bootstrap.png" width="25px" alt="Icône de Bootstrap"></div>
-                                        <p>Bootstrap</p>
-                                    </div>
-                                    <div class="d-flex me-4 me-md-5">
-                                        <div class="me-2"><img src="Images/Icones/js.png" width="25px" alt="Icône de JavaScript"></div>
-                                        <p>JavaScript</p>
-                                    </div>
-                                    <div class="d-flex me-4 me-md-5">
-                                        <div class="me-2"><img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery"></div>
-                                        <p>jQuery</p>
-                                    </div>
+                            <h2 class="fw-bold mb-3">Compétences informatiques</h2>
+                            <div class="grid-hard-skills mb-5 pb-md-5">
+                                <div>
+                                    <img src="Images/Icones/html-5.png" width="25px" alt="Icône du langage HTML">
+                                    <span>HTML</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/css-3.png" width="25px" alt="Icône du langage CSS">
+                                    <span>CSS</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/bootstrap.png" width="25px" alt="Icône de Bootstrap">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/js.png" width="25px" alt="Icône de JavaScript">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>jQuery</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>React</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>C#</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>C++</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>C</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>PHP</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>Python</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>SQL</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>Git</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>Visual Studio</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>Visual Studio Code</span>
+                                </div>
+                                <div>
+                                    <img src="Images/Icones/jquery.png" width="25px" alt="Icône de jQuery">
+                                    <span>Figma</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row container-margin-2" style="background-color: #dadaec; padding-top: 100px; padding-bottom: 100px;">
-                <div class="mt-3 mb-xxl-5 pb-xxl-5">
-                    <div class="container-fluid mt-4">
-                        <div class="row">
+        </div>
+        <div class="row container-margin-2" style="background-color: #7db6e4; padding-top: 100px; padding-bottom: 100px;">
+            <div class="mt-3 mb-xxl-5 pb-xxl-5">
+                <div class="container-fluid mt-4">
+                    <div class="row">
                             <div class="col-12 col-md-6 col-xl-6">
-                                
                                 <div class="project" style="margin-bottom: 100px;">
                                     <div class="text-center">
                                         <a href="https://serenitys-communaute.fr/">
@@ -135,13 +188,14 @@
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <h3 class="fw-bold my-4">Sérénity'S&nbsp;Communauté</h3>
-                                        <p>Septembre 2023 - Septembre 2024</p>
-                                        <!-- <p class="d-inline bg-success rounded px-3 py-1">Projet en entreprise</p> -->
+                                    <h3 class="fw-bold my-4">Sérénity'S&nbsp;Communauté</h3>
+                                    <p>Septembre 2023 - Septembre 2024</p>
+                                    <!-- <p class="d-inline bg-success rounded px-3 py-1">Projet en entreprise</p> -->
                                     </div>
                                     <p>L'entreprise cliente Sérénity'S&nbsp;Communauté, nous a demandé de réaliser son application web. Cette dernière a pour but d'améliorer la confiance accordée aux locataires de la part des bailleurs.
                                     </p>
                                 </div>
+                                
                             </div>
                             <div class="col-12 col-md-6 col-xl-6">
                                 <div class="project">
