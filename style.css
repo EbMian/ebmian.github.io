@@ -5,3 +5,7 @@
 .lightBlueGrad {
     background-image: linear-gradient(aliceblue, white);
 }
+
+.justify {
+    text-align: justify;
+}
